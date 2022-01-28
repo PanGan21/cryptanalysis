@@ -85,7 +85,7 @@ def main():
     if message == m1:
         print("Accept message sent")
     else:
-        print("Not equal with original message")
+        print("Not equal with original")
 
 
 main()
