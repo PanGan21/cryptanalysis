@@ -72,7 +72,6 @@ def encrypt(privatek, plaintext):
     key, n = privatek
 
     # Convert each letter in the plaintext to numbers based on the character using a^b mod m
-
     numberRepr = [ord(char) for char in plaintext]
     cipher = [pow(ord(char), key, n) for char in plaintext]
 
@@ -99,13 +98,6 @@ def hashFunction(message):
 
 def verify(receivedHashed, message):
     ownHashed = hashFunction(message)
-    # if receivedHashed == ourHashed:
-    #     print("Verification successful: ", )
-    #     print(receivedHashed, " = ", ourHashed)
-    # else:
-
-    #     print("Verification failed")
-    #     print(receivedHashed, " != ", ourHashed)
     return receivedHashed == ownHashed
 
 
