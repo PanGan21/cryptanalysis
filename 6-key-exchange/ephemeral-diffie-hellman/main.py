@@ -1,40 +1,6 @@
 import random
 import sys
 
-# p = 67
-# g = 34
-
-
-# # Safe generators for selecting G for a prime of 67:
-# # 2   7   11   12   13   18   20   28   31   32   34   41   44   46   48   50   51   57   61   63
-
-
-# x = random.randint(3, p)
-# y = random.randint(3, p)
-
-# G_x = (G**x) % p
-# G_y = (G**y) % p
-
-
-# print('Server selects:')
-# print('G=', G, ', N=', p)
-# print('Server creates:')
-# print('x=', x, ', G^x=', G_x)
-
-# print('Server passes: G, N and G^x')
-# print()
-
-# print()
-# print('Client creates:')
-# print('y=', y, ', G^y=', G_y)
-
-# print()
-# shared = (G_x**y) % p
-# print('Shared key: ', shared)
-
-# shared = (G_y**x) % p
-# print('Shared key: ', shared)
-
 
 def main():
     p = 67
