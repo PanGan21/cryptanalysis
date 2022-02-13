@@ -41,7 +41,7 @@ def encrypt(message, key):
         p = np.transpose(np.asarray(p))[:, np.newaxis]
 
         while p.shape[0] != key.shape[0]:
-            p = np.append(p, letter_to_index[" "])[:, np.newaxis]
+            p = np.append(p, 0)[:, np.newaxis]
 
         numbers = np.dot(key, p) % len(alphabet)
         n = numbers.shape[0]  # length of encrypted message (in numbers)
@@ -81,8 +81,8 @@ def decrypt(cipher_text, key_inv):
 
 
 def main():
-    key = np.array([[17, 17], [21, 18]])
-    message = "paymoremoney"
+    key = np.array([[11, 6, 8], [0, 3, 14], [24, 0, 9]])
+    message = "beontimeatten"
 
     cipher_text = encrypt(message, key)
     print(cipher_text)
