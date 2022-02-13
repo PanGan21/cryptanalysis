@@ -14,6 +14,7 @@ def main():
     # Tag em
     N = len(cipher_flat)
     freqs = collections.Counter(cipher_flat)
+    print("letter frequencies", freqs)
     alphabet = map(chr, range(ord('A'), ord('Z')+1))
     freqsum = 0.0
 
